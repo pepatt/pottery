@@ -20,7 +20,7 @@ function App() {
               Each $100 donated provides around 135 emergency meals, focused primarily in Gaza but also supporting the West Bank.
             </p>
             <p class = "p3">
-              Proof of donation will be uploaded on this website and posted on @ayla_drawss on instagram.
+              Proof of donation will be uploaded on this website and posted on <a href="@ayla_drawss">ayla_drawss</a> on instagram.
             </p>
             <p class = "p4">
               For more information or to donate yourself, visit&nbsp; 
@@ -59,9 +59,9 @@ function App() {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ea.
             </p>
             </article>
-             <div class = "cubes_wrapper">
-              <div class = "top_cube"></div>
-              <div class = "bot_cube"></div>
+             <div class = "cubes_wrapper cubes_wrapper_L">
+              <div class = "top_cube top_cube_L"></div>
+              <div class = "bot_cube bot_cube_L"></div>
             </div>
          </div>
 
