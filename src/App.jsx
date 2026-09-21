@@ -20,11 +20,11 @@ function App() {
               Each $100 donated provides around 135 emergency meals, focused primarily in Gaza but also supporting the West Bank.
             </p>
             <p class = "p3">
-              Proof of donation will be uploaded on this website and posted on <a href="@ayla_drawss">ayla_drawss</a> on instagram.
+              Proof of donation will be uploaded on this website and posted on <a class = "button" href="@ayla_drawss">ayla_drawss</a> on instagram.
             </p>
             <p class = "p4">
               For more information or to donate yourself, visit&nbsp; 
-              <a href="https://www.wfp.org/emergencies/palestine-emergency">WFP’sPalestine page.</a>
+              <a class = "button" href="https://www.wfp.org/emergencies/palestine-emergency">WFP’sPalestine page.</a>
             </p>
           </div>
         </article> 
@@ -33,10 +33,10 @@ function App() {
             Inspired by Palestinian Tatreez, a traditional embroidery style 
 
           </p>
-          <p class = "body_header">            Learn more at&nbsp;
-            <a href="https://www.tatreezandtea.com/">tatreezandtea</a>
-              ,&nbsp; 
-              <a href="https://tatreeztraditions.com/">tatreeztraditions</a>
+          <p class = "body_header">Learn more at&nbsp;
+            <a class = "button" href="https://www.tatreezandtea.com/">tatreezandtea</a>
+            &nbsp;and&nbsp; 
+              <a class = "button" href="https://tatreeztraditions.com/">tatreeztraditions</a>
           </p>
 
           <div class = "body_total_wrapper">

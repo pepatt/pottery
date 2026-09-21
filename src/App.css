@@ -235,3 +235,13 @@
         right: -50px;
     }
 }
+
+.button {
+    border: 0.5px solid #718D64;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #718D64;
+    background-color: #F4F6F3;
+    padding: 0px 4px 0px 4px;
+    margin: 10px 0px 10px 0px;
+}
