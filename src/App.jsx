@@ -52,7 +52,7 @@ function App() {
             </article>
           </div>
 
-          <div class = "body_total_wrapper">
+          <div class = "body_total_wrapper body_total_wrapper_two">
             <article class = "body_wrapper">
             <p class = "body_title body_header_green">Damascus Rose Motif</p>
             <p class = "body_article">
