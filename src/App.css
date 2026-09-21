@@ -1,3 +1,50 @@
+/* not my button. copied from getcssscan.com */
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 2px 13px -3px,#D6D6E7 0 -1.5px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 20px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 12px;
+}
+
+.button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 2px 13px -3px, #D6D6E7 0 -1.5px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 2px 13px -3px, #D6D6E7 0 -1.5px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* end of code I do not own */
+
 * {
     font-size: 18px;
     padding: 0;
@@ -54,7 +101,7 @@
     font-size: 24px;
 }
 .body_header {
-    padding-bottom: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
 }
 .body_total_wrapper {
     display: flex;
@@ -157,7 +204,7 @@
         display: none;
     }
     .top_cube {
-        right: 50px;
+        right: 40px;
         &.top_cube_L {
             right: 70px;
         }
@@ -210,20 +257,30 @@
     .top_cube {
         right: 20px;
         &.top_cube_L {
-            right: 50px;
+            right: 25px;
         }
     } 
     .bot_cube {
         right: -10px;
         &.bot_cube_L {
-            right: 10px;
+            right: -5px;
         }
     }
 }
+/*mobile */
 @media screen and (max-width: 400px) {
+    .button {
+        font-size: 10px;
+    }
+    .body_header {
+        border-bottom: 0.5px solid lightgrey;
+        margin-bottom: 1rem;
+    }
     .body_total_wrapper {
         flex-direction: column-reverse;
         padding-bottom: 13rem;
+        border-bottom: 0.5px solid lightgrey;
+        margin-bottom: 1rem;
     }
     .body_total_wrapper_two {
         flex-direction: column;
@@ -234,14 +291,14 @@
     .cubes_wrapper {
         right: -50px;
     }
-}
-
-.button {
-    border: 0.5px solid #718D64;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #718D64;
-    background-color: #F4F6F3;
-    padding: 0px 4px 0px 4px;
-    margin: 10px 0px 10px 0px;
+    .top_cube {
+        &.top_cube_L {
+            right: 40px;
+        }
+    }
+    .bot_cube {
+        &.bot_cube_L {
+            right: 10px; 
+        }
+    }
 }
