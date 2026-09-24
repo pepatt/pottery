@@ -10,7 +10,7 @@ function App() {
       <div class = "void"></div>
       <div class = "article_wrapper">
         <article class = "article_header">
-          <img class = "article_img" src ="./src/assets/pot.jpg" alt="title img" />
+          <img class = "article_img" src ="/pot.jpg" alt="title img" />
           <p class = "article_title">
             Pottery for palestine (this will behandwritten?)
           </p>
