@@ -2,8 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  print("testing")
+ console.log("testing")
 
   return ( 
     <div class = "body">
