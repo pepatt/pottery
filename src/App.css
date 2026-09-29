@@ -39,6 +39,36 @@ a:hover {
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    z-index: 2;
+}
+.button {
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding: 0.2em 0.1em;
+}
+.button:hover {
+    box-sizing: border-box;
+    padding: 0.2em 0.1em;
+    background-color: white;
+    color: black;
+}
+.button:active {
+    box-sizing: border-box;
+    padding: 0.2em 0.1em;
+    background-color: white;
+    color: black;
+}
+.black {
+    color: black;
+}
+.black:hover {
+    background-color: #718D64;
+    color: white;
+}
+.black:active {
+    background-color: #718D64;
+    color: white;
 }
 .article_img {
     mask-image: linear-gradient(to left,
@@ -47,6 +77,7 @@ a:hover {
     transparent 80%);
     opacity: 0.2;
     position: absolute;
+    z-index: 1;
     top: 0px;
     right: -100px;
     width: 100%;
@@ -92,7 +123,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .body_wrapper {
@@ -104,78 +135,72 @@ a:hover {
     padding-bottom: 1rem;
 }
 .cubes_wrapper {
-    display: flex;
-    background-color: grey;
-    height: 20vh;
+    anchor-name: --cubes_wrapper;
+    anchor-scope: --cubes_wrapper;
+    margin-right: 2rem;
     width: 50%;
+    gap: 1em;
+    overflow: hidden;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.cubes_wrapper::-webkit-scrollbar {
+    display: none;
+}
+.cubes_wrapper::scroll-button(right), .cubes_wrapper::scroll-button(left) {
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 1.5em 1em;
+    content: "→";
+    border: none;
+    height: 20px;
+    align-self: center;
+    position: fixed;
+    position-anchor: --cubes_wrapper;
+    position-area: right center;
+    background-color: #718D64;
+    translate: -50%;
+}
+.cubes_wrapper::scroll-button(left) {
+    content: "←";
+    position-area: left center;
+    translate: 50%;
+}
+.cubes_wrapper_L {
+    margin-left: 2rem;
+    margin-right: 0rem;
+}
+.img_wrapper {
+    flex: 0 0 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tatreez {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
 }
 
 
 @media screen and (min-width: 1900px) {
-    .top_cube {
-        right: 100px;
-    } 
-    .bot_cube {
-        right: 60px;
-    }
 }
 @media screen and (max-width: 1100px) {
-    .top_cube {
-        right: 30px;
-    } 
-    .bot_cube {
-        right: -10px;
-    }
 }
 @media screen and (max-width: 1000px) {
-    .top_cube {
-        right: 10px;
-        &.top_cube_L {
-            right: 35px;
-        }
-    } 
-    .bot_cube {
-        right: -25px;
-        &.bot_cube_L {
-            right: -5px;
-        }
-    }
 }
 @media screen and (max-width: 800px) {
     .void {
         display: none;
     }
-    .top_cube {
-        right: 100px;
-        &.top_cube_L {
-            right: 140px;
-        }
-    } 
-    .bot_cube {
-        right: 60px;
-        &.bot_cube_L {
-            right: 100px;
-        }
-    }
-
 }
 @media screen and (max-width: 650px) {
     .void {
         display: none;
     }
-    .top_cube {
-        right: 40px;
-        &.top_cube_L {
-            right: 70px;
-        }
-    } 
-    .bot_cube {
-        right: 10px;
-        &.bot_cube_L {
-            right: 30px;
-        }
-    }
-
 }
 @media screen and (max-width: 550px) {
     * {
@@ -193,19 +218,6 @@ a:hover {
     .void {
         display: none;
     }
-    .top_cube {
-        right: 60px;
-        &.top_cube_L {
-            right: 70px;
-        }
-    } 
-    .bot_cube {
-        right: 20px;
-        &.bot_cube_L {
-            right: 30px;
-        }
-    }
-
 }
 @media screen and (max-width: 500px) {
     .article_title {
@@ -214,18 +226,6 @@ a:hover {
     .p_wrapper {
         width: 100%;
     } 
-    .top_cube {
-        right: 20px;
-        &.top_cube_L {
-            right: 25px;
-        }
-    } 
-    .bot_cube {
-        right: -10px;
-        &.bot_cube_L {
-            right: -5px;
-        }
-    }
 }
 /*mobile */
 @media screen and (max-width: 430px) {
@@ -250,18 +250,5 @@ a:hover {
     }
     .body_article {
         padding-bottom: 1rem; 
-    }
-    .cubes_wrapper {
-        right: -50px;
-    }
-    .top_cube {
-        &.top_cube_L {
-            right: 40px;
-        }
-    }
-    .bot_cube {
-        &.bot_cube_L {
-            right: 10px; 
-        }
     }
 }

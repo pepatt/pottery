@@ -35,13 +35,19 @@ function App() {
 
           </p>
           <p class = "body_header">Learn more at&nbsp;
-            <a href="https://www.tatreezandtea.com/">tatreezandtea</a>
+            <a class = "button black" href="https://www.tatreezandtea.com/">tatreezandtea</a>
             &ensp;and&nbsp; 
-              <a href="https://tatreeztraditions.com/">tatreeztraditions</a>
+              <a class = "button black" href="https://tatreeztraditions.com/">tatreeztraditions</a>
           </p>
 
           <div class = "body_total_wrapper">
             <div class = "cubes_wrapper">
+              <div className="img_wrapper">
+                <img src="./pattern.jpg" alt="tatreez img" className="tatreez" />
+              </div>
+              <div className="img_wrapper">
+                <img src="./pottery.jpg" alt="tatreez img" className="tatreez" />
+              </div>
             </div>
             <article class = "body_wrapper">
             <p class = "body_title body_header_green">Coffee Bean Motif</p>
@@ -59,12 +65,24 @@ function App() {
             </p>
             </article>
              <div class = "cubes_wrapper cubes_wrapper_L">
+              <div className="img_wrapper">
+                <img src="./pattern.jpg" alt="tatreez img" className="tatreez" />
+              </div>
+              <div className="img_wrapper">
+                <img src="./pottery.jpg" alt="tatreez img" className="tatreez" />
+              </div>
             </div>
          </div>
 
 
           <div class = "body_total_wrapper">
             <div class = "cubes_wrapper">
+              <div className="img_wrapper">
+                <img src="./pattern.jpg" alt="tatreez img" className="tatreez" />
+              </div>
+              <div className="img_wrapper">
+                <img src="./pottery.jpg" alt="tatreez img" className="tatreez" />
+              </div>
             </div>
             <article class = "body_wrapper">
             <p class = "body_title body_header_green">Other Motif</p>
@@ -73,7 +91,6 @@ function App() {
             </p>
             </article>
           </div>
-
         </article>
       </div>
       <div class = "void"></div>
