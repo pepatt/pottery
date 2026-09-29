@@ -135,7 +135,7 @@
 .cubes_wrapper::scroll-button(right), .cubes_wrapper::scroll-button(left) {
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 1.5em 1em;
     content: "→";
     border: none;
@@ -145,10 +145,12 @@
     position-anchor: --cubes_wrapper;
     position-area: right center;
     background-color: #718D64;
+    translate: -50%;
 }
 .cubes_wrapper::scroll-button(left) {
     content: "←";
     position-area: left center;
+    translate: 50%;
 }
 .cubes_wrapper_L {
     margin-left: 2rem;
