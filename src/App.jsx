@@ -35,9 +35,9 @@ function App() {
 
           </p>
           <p class = "body_header">Learn more at&nbsp;
-            <a class = "button" href="https://www.tatreezandtea.com/">tatreezandtea</a>
+            <a class = "button black" href="https://www.tatreezandtea.com/">tatreezandtea</a>
             &ensp;and&nbsp; 
-              <a class = "button" href="https://tatreeztraditions.com/">tatreeztraditions</a>
+              <a class = "button black" href="https://tatreeztraditions.com/">tatreeztraditions</a>
           </p>
 
           <div class = "body_total_wrapper">

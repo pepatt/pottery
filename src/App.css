@@ -23,6 +23,36 @@
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    z-index: 2;
+}
+.button {
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding: 0.2em 0.1em;
+}
+.button:hover {
+    box-sizing: border-box;
+    padding: 0.2em 0.1em;
+    background-color: white;
+    color: black;
+}
+.button:active {
+    box-sizing: border-box;
+    padding: 0.2em 0.1em;
+    background-color: white;
+    color: black;
+}
+.black {
+    color: black;
+}
+.black:hover {
+    background-color: #718D64;
+    color: white;
+}
+.black:active {
+    background-color: #718D64;
+    color: white;
 }
 .article_img {
     mask-image: linear-gradient(to left,
@@ -31,6 +61,7 @@
     transparent 80%);
     opacity: 0.2;
     position: absolute;
+    z-index: 1;
     top: 0px;
     right: -100px;
     width: 100%;
@@ -102,7 +133,10 @@
     display: none;
 }
 .cubes_wrapper::scroll-button(right), .cubes_wrapper::scroll-button(left) {
-    color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5em 1em;
     content: "→";
     border: none;
     height: 20px;
@@ -110,6 +144,7 @@
     position: fixed;
     position-anchor: --cubes_wrapper;
     position-area: right center;
+    background-color: #718D64;
 }
 .cubes_wrapper::scroll-button(left) {
     content: "←";
