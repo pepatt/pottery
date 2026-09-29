@@ -42,8 +42,12 @@ function App() {
 
           <div class = "body_total_wrapper">
             <div class = "cubes_wrapper">
-              <div class = "top_cube"></div>
-              <div class = "bot_cube"></div>
+              <div className="img_wrapper">
+                <img src="./pattern.jpg" alt="tatreez img" className="tatreez" />
+              </div>
+              <div className="img_wrapper">
+                <img src="./pottery.jpg" alt="tatreez img" className="tatreez" />
+              </div>
             </div>
             <article class = "body_wrapper">
             <p class = "body_title body_header_green">Coffee Bean Motif</p>
@@ -61,16 +65,24 @@ function App() {
             </p>
             </article>
              <div class = "cubes_wrapper cubes_wrapper_L">
-              <div class = "top_cube top_cube_L"></div>
-              <div class = "bot_cube bot_cube_L"></div>
+              <div className="img_wrapper">
+                <img src="./pattern.jpg" alt="tatreez img" className="tatreez" />
+              </div>
+              <div className="img_wrapper">
+                <img src="./pottery.jpg" alt="tatreez img" className="tatreez" />
+              </div>
             </div>
          </div>
 
 
           <div class = "body_total_wrapper">
             <div class = "cubes_wrapper">
-              <div class = "top_cube"></div>
-              <div class = "bot_cube"></div>
+              <div className="img_wrapper">
+                <img src="./pattern.jpg" alt="tatreez img" className="tatreez" />
+              </div>
+              <div className="img_wrapper">
+                <img src="./pottery.jpg" alt="tatreez img" className="tatreez" />
+              </div>
             </div>
             <article class = "body_wrapper">
             <p class = "body_title body_header_green">Other Motif</p>
@@ -79,7 +91,6 @@ function App() {
             </p>
             </article>
           </div>
-
         </article>
       </div>
       <div class = "void"></div>
