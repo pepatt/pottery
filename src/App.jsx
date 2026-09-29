@@ -21,11 +21,11 @@ function App() {
               Each $100 donated provides around 135 emergency meals, focused primarily in Gaza but also supporting the West Bank.
             </p>
             <p class = "p3">
-              Proof of donation will be uploaded on this website and posted on <a class = "button" href="https://www.instagram.com/ayla_drawss/">ayla_drawss</a> on instagram.
+              Proof of donation will be uploaded on this website and posted on <a class = "link" href="https://www.instagram.com/ayla_drawss/">ayla_drawss</a> on instagram.
             </p>
             <p class = "p4">
               For more information or to donate yourself, visit&nbsp; 
-              <a class = "button" href="https://www.wfp.org/emergencies/palestine-emergency">WFP’sPalestine page.</a>
+              <a class = "link" href="https://www.wfp.org/emergencies/palestine-emergency">WFP’sPalestine page.</a>
             </p>
           </div>
         </article> 
@@ -35,15 +35,13 @@ function App() {
 
           </p>
           <p class = "body_header">Learn more at&nbsp;
-            <a class = "button" href="https://www.tatreezandtea.com/">tatreezandtea</a>
+            <a href="https://www.tatreezandtea.com/">tatreezandtea</a>
             &ensp;and&nbsp; 
-              <a class = "button" href="https://tatreeztraditions.com/">tatreeztraditions</a>
+              <a href="https://tatreeztraditions.com/">tatreeztraditions</a>
           </p>
 
           <div class = "body_total_wrapper">
             <div class = "cubes_wrapper">
-              <div class = "top_cube"></div>
-              <div class = "bot_cube"></div>
             </div>
             <article class = "body_wrapper">
             <p class = "body_title body_header_green">Coffee Bean Motif</p>
@@ -61,16 +59,12 @@ function App() {
             </p>
             </article>
              <div class = "cubes_wrapper cubes_wrapper_L">
-              <div class = "top_cube top_cube_L"></div>
-              <div class = "bot_cube bot_cube_L"></div>
             </div>
          </div>
 
 
           <div class = "body_total_wrapper">
             <div class = "cubes_wrapper">
-              <div class = "top_cube"></div>
-              <div class = "bot_cube"></div>
             </div>
             <article class = "body_wrapper">
             <p class = "body_title body_header_green">Other Motif</p>
