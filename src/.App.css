@@ -1,0 +1,322 @@
+/* not my button. copied from getcssscan.com */
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.2) 0 2px 13px -3px,#D6D6E7 0 -1.5px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  height: 20px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 12px;
+}
+
+.button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.2) 0 2px 13px -3px, #D6D6E7 0 -1.5px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.2) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 2px 13px -3px, #D6D6E7 0 -1.5px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* end of code I do not own */
+
+* {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+}
+.void {
+    width: 35%;
+    background-color: #202021;
+}
+
+.article_header{
+    position: relative;
+    color: #F4F6F3;
+    overflow: hidden;
+    width: 100%;
+    background-color: #718D64;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.article_img {
+    mask-image: linear-gradient(to left,
+    black 0%,
+    black 25%,
+    transparent 80%);
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.article_title {
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 60%;
+    overflow-wrap: keep-all;
+}
+.p_wrapper {
+    width: 60%;
+}
+
+.p1,.p2,.p3,.p4 {
+    padding-bottom: 1rem;
+}
+
+.article_wrapper {
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+}
+
+.article_body {
+    box-shadow: 0px 8px 20px rgb(0, 0, 0, 0.15) inset;
+    background-color: #F4F6F3;
+    padding: 2em;
+}
+.body_header_green {
+    color: #718D64;
+    font-weight: bold;
+    font-size: 24px;
+}
+.body_header {
+    padding: 1rem 0rem 1rem 0rem;
+}
+.body_total_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 5rem;
+}
+
+.body_wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.body_title {
+    padding-bottom: 1rem;
+}
+.cubes_wrapper {
+    margin-right: 2rem;
+    flex-grow: 1;
+    width: 60%;
+    height: 50%;
+    position: relative;
+}
+.top_cube {
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 160px;
+    background-color: #718D64;
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    order: -1;
+}
+.bot_cube {
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 160px;
+    background-color: #D9EAD3;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    order: 1;
+}
+.cubes_wrapper_L {
+    margin-left: 2rem;
+    margin-right: 0rem;
+}
+
+@media screen and (min-width: 1900px) {
+    .top_cube {
+        right: 100px;
+    } 
+    .bot_cube {
+        right: 60px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .top_cube {
+        right: 30px;
+    } 
+    .bot_cube {
+        right: -10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .top_cube {
+        right: 10px;
+        &.top_cube_L {
+            right: 35px;
+        }
+    } 
+    .bot_cube {
+        right: -25px;
+        &.bot_cube_L {
+            right: -5px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .void {
+        display: none;
+    }
+    .top_cube {
+        right: 100px;
+        &.top_cube_L {
+            right: 140px;
+        }
+    } 
+    .bot_cube {
+        right: 60px;
+        &.bot_cube_L {
+            right: 100px;
+        }
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .void {
+        display: none;
+    }
+    .top_cube {
+        right: 40px;
+        &.top_cube_L {
+            right: 70px;
+        }
+    } 
+    .bot_cube {
+        right: 10px;
+        &.bot_cube_L {
+            right: 30px;
+        }
+    }
+
+}
+@media screen and (max-width: 550px) {
+    * {
+        font-size: 12px;
+    }
+    .article_title {
+        font-size: 18px;
+    }
+    .body_header_green {
+        font-size: 18px;
+    }
+    .body_total_wrapper {
+        padding-bottom: 8rem;
+    }
+    .void {
+        display: none;
+    }
+    .top_cube {
+        right: 60px;
+        &.top_cube_L {
+            right: 70px;
+        }
+    } 
+    .bot_cube {
+        right: 20px;
+        &.bot_cube_L {
+            right: 30px;
+        }
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .article_title {
+        width: 100%;
+    }
+    .p_wrapper {
+        width: 100%;
+    } 
+    .top_cube {
+        right: 20px;
+        &.top_cube_L {
+            right: 25px;
+        }
+    } 
+    .bot_cube {
+        right: -10px;
+        &.bot_cube_L {
+            right: -5px;
+        }
+    }
+}
+/*mobile */
+@media screen and (max-width: 430px) {
+    .article_img {
+        display: none;
+    }
+    .button {
+        font-size: 10px;
+    }
+    .body_header {
+        border-bottom: 0.5px solid lightgrey;
+        margin-bottom: 1rem;
+    }
+    .body_total_wrapper {
+        flex-direction: column-reverse;
+        padding-bottom: 13rem;
+        border-bottom: 0.5px solid lightgrey;
+        margin-bottom: 1rem;
+    }
+    .body_total_wrapper_two {
+        flex-direction: column;
+    }
+    .body_article {
+        padding-bottom: 1rem; 
+    }
+    .cubes_wrapper {
+        right: -50px;
+    }
+    .top_cube {
+        &.top_cube_L {
+            right: 40px;
+        }
+    }
+    .bot_cube {
+        &.bot_cube_L {
+            right: 10px; 
+        }
+    }
+}
