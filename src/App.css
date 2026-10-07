@@ -15,9 +15,18 @@ header {
     height: 20vh;
 }
 .header_container {
-    padding: 0em 1em;
     margin: 1em;
-    border-inline: 1px solid lightgrey;
+    display: flex; 
+    flex-direction: row;
+}
+.p_container {
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+.p_container_l {
+}
+.p_container_r {
+    border-left: none;
 }
 .header_p {
     font-weight: normal;
@@ -49,4 +58,22 @@ footer {
 .card_img {
     width: 100%;
     border-radius: 10px;
+}
+.main_title {
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.main_title_accent {
+    font-size: 10px;
+    color: grey;
+    line-height: 1.0;
+}
+.main_article { 
+    padding: 1em 0em;
+    color: grey;
+}
+.main_article::first-line {
+    color: black;
+    font-size: 16px;
 }
