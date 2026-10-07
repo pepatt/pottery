@@ -19,14 +19,12 @@ header {
     display: flex; 
     flex-direction: row;
 }
-.p_container {
-    border: 1px solid grey;
-    border-radius: 2px;
-}
-.p_container_l {
-}
-.p_container_r {
-    border-left: none;
+.header_p_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 .header_p {
     font-weight: normal;
