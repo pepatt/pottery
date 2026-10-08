@@ -29,7 +29,7 @@ function App() {
             instagram.
           </p>
           <p class="subheader_p subheader_p_right">
-            For more information or to donate yourself, visit&nbsp;
+            For more information or to donate yourself, visit:<br></br>
             <a href="https://www.wfp.org/emergencies/palestine-emergency">
               WFP’sPalestine page.
             </a>
@@ -41,12 +41,6 @@ function App() {
         <section className="main_top">
           <p class="main_title">Inspired by Palestinian Tatreez</p>
           <p class="main_title_accent">a traditional embroidery style</p>
-          <p class="main_article">
-            Learn more at <br></br>
-            <a href="https://www.tatreezandtea.com/">tatreezandtea</a>
-            <br></br>and<br></br>
-            <a href="https://tatreeztraditions.com/">tatreeztraditions</a>
-          </p>
         </section>
       </main>
 
@@ -60,6 +54,12 @@ function App() {
         <div class="main_card">
           <img class="card_img" src="./rose_full.png" alt="card_img" />
         </div>
+        <p class="main_article">
+          Learn more at: <br></br>
+          <a href="https://www.tatreezandtea.com/">tatreezandtea</a>
+          <br></br>
+          <a href="https://tatreeztraditions.com/">tatreeztraditions</a>
+        </p>
       </footer>
     </body>
   );
