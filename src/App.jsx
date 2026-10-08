@@ -54,13 +54,16 @@ function App() {
         <div class="main_card">
           <img class="card_img" src="./rose_full.png" alt="card_img" />
         </div>
-        <p class="main_article">
-          Learn more at: <br></br>
-          <a href="https://www.tatreezandtea.com/">tatreezandtea</a>
-          <br></br>
-          <a href="https://tatreeztraditions.com/">tatreeztraditions</a>
-        </p>
       </footer>
+      <div className="learn_container">
+        <p class="main_article">Learn more at:</p>
+        <a class="learn_links" href="https://www.tatreezandtea.com/">
+          tatreezandtea
+        </a>
+        <a class="learn_links" href="https://tatreeztraditions.com/">
+          tatreeztraditions
+        </a>
+      </div>
     </body>
   );
 }
