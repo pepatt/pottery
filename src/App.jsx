@@ -46,23 +46,40 @@ function App() {
 
       <main class="">
         <section className="main_top">
-          <p class="main_title">Inspired by Palestinian Tatreez</p>
-          <p class="main_title_accent">a traditional embroidery style</p>
+          <p class="main_title">Inspired by Tatreez</p>
+          <p class="main_title_accent">
+            a traditional Palestinian embroidery style
+          </p>
         </section>
         <div className="learn_container">
-          <p class="main_title learn">Learn more at:</p>
           <div class="main_text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perspiciatis voluptatibus rerum iure sunt earum obcaecati adipisci
-            quos alias quisquam laudantium commodi nam veritatis accusantium
-            delectus, distinctio illum porro, blanditiis aliquam?
+            Tatreez is a historical cross stitch style that has been practiced
+            for centuries in Palestine. All definitions names, and patterns of
+            the designs used here are sourced from&nbsp;
+            <a href="https://www.tatreezandtea.com/" className="main_link">
+              tatreezandtea.com
+            </a>{" "}
+            and&nbsp;
+            <a href="https://tatreeztraditions.com/" className="main_link">
+              tatreedtraditions.com
+            </a>
+            . To learn more and purchase your own palestinian tatreez, also
+            see&nbsp;
+            <a
+              href="https://www.instagram.com/thetatreezcollective"
+              className="main_link"
+            >
+              @thetatreezcollective
+            </a>{" "}
+            and&nbsp;
+            <a
+              href="https://www.instagram.com/tatreezbanatna"
+              className="main_link"
+            >
+              @tatreezbanatna
+            </a>{" "}
+            on instagram.
           </div>
-          <a class="learn_links" href="https://www.tatreezandtea.com/">
-            tatreezandtea
-          </a>
-          <a class="learn_links" href="https://tatreeztraditions.com/">
-            tatreeztraditions
-          </a>
         </div>
       </main>
 
