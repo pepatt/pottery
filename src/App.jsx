@@ -55,14 +55,14 @@ function App() {
           <div className="learn_container">
             <div class="main_text">
               Tatreez is a historical cross stitch style that has been practiced
-              for centuries in Palestine. All definitions names, and patterns of
-              the designs used here are sourced from&nbsp;
+              for centuries in Palestine. All definitions, names, and patterns
+              of the designs used here are sourced from&nbsp;
               <a href="https://www.tatreezandtea.com/" className="main_link">
                 tatreezandtea.com
               </a>{" "}
               and&nbsp;
               <a href="https://tatreeztraditions.com/" className="main_link">
-                tatreedtraditions.com
+                tatreeztraditions.com
               </a>
               . To learn more and purchase your own palestinian tatreez, also
               see&nbsp;
